@@ -14,9 +14,11 @@ static void count_button_press(void *arg)
 {
     while(1)
     {
-        cnt += gpio_get_level(GPIO_INPUT_IO);
+        if(gpio_get_level(GPIO_INPUT_IO) == 0)
+            cnt += 1;
+        vTaskDelay(50);
     }
-    vTaskDelay(50);
+    
 }
 
 void app_main() {
@@ -37,15 +39,16 @@ void app_main() {
 
     io_conf.mode = GPIO_MODE_INPUT;
     io_conf.pin_bit_mask = GPIO_INPUT_PIN_SEL;
+    io_conf.pull_up_en = 1;
     gpio_config(&io_conf);
 	
-	int times[] = {1000, 500, 250, 750};
+	//int times[] = {1000, 500, 250, 750};
 	
     xTaskCreate(count_button_press, "count_button_press", 2048, NULL, 10, NULL);
 
     while(1) {
         printf("cnt: %d\n", cnt);
         gpio_set_level(GPIO_OUTPUT_IO, cnt % 2);
-        vTaskDelay(times[cnt % 4] / portTICK_PERIOD_MS);
+        vTaskDelay(1000 / portTICK_PERIOD_MS);
     }
 }
