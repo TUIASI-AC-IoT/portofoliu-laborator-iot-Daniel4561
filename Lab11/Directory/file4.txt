@@ -1,0 +1,5 @@
+POST actualizarea unei resurse existente, crearea unei resurse noi sau procesarea unui set de date;
+GET citirea unei resurse existente;
+PUT crearea unei resurse noi, sau înlocuirea uneia existente;
+DELETE s,
+tergerea unei resurse existente.

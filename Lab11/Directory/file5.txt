@@ -1,0 +1,27 @@
+Aplicat,
+ie propusa˘
+Pornind de la exemplul prezentat în [5], creat,
+i un serviciu RESTful simplu care permite gestionarea unui set de fis,
+iere cont,
+inut
+într-un director. Se doresc urmatoarele funct ˘ ,
+ionalitat˘,
+i:
+• listarea cont,
+inutului directorului;
+• listarea cont,
+inutului unui fis,
+ier text, specificat prin nume;
+• crearea unui fis,
+ier specificat prin nume s,
+i cont,
+inut;
+• crearea unui fis,
+ier specificat prin cont,
+inut;
+• s,
+tergerea unui fis,
+ier specificat prin nume;
+• modificarea cont,
+inutului unui fis,
+ier specificat prin nume.

@@ -1,0 +1,11 @@
+Dezvoltarea unui astfel de serviciu Web presupune, de fapt, modelarea funct,
+ionalitat˘,
+ii metodelor caracteristice protocolului
+HTTP [4] peste cele 4 primitive ment,
+ionate anterior. Astfel, funct,
+ionalitatea serviciului va fi descrisa în termeni de operat ˘ ,
+ii
+efectuate asupra resurselor gestionate de o astfel de aplicat,
+ie. Corelarea dintre metodele caracteristice HTTP s,
+i primitivele
+CRUD fundamentale este urmatoarea:

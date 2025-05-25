@@ -1,0 +1,4 @@
+Update resursa (sau o reprezentare a acesteia) poate fi actualizata la nevoie (implic ˘ a s ˘ ,
+i procesarea de date);
+Delete resursa (sau o reprezentare a acesteia) trebuie s,
+tearsa când devine inactiv ˘ a.
